@@ -103,3 +103,88 @@ For GitBash or Mac Terminal:
 ssh -i "your-key.pem" ec2-user@your-ec2-public-ip
 
 
+
+## 3. Linux File System Hierarchy
+- `/`: Root directory
+- `/etc`: Configuration files
+- `/var`: Variable files (logs, spool)
+- `/home`: User home directories
+- `/bin`: Essential binaries
+- `/usr`: User-installed software
+- `/tmp`: Temporary files
+
+## 4. Basic Commands
+| Command | Description |
+|---------|-------------|
+| `ls`    | List directory contents |
+| `cd`    | Change directory |
+| `pwd`   | Print working directory |
+| `cp`    | Copy files/directories |
+| `mv`    | Move/rename files |
+| `rm`    | Remove files/directories |
+| `mkdir` | Create new directory |
+| `touch` | Create new empty file |
+
+## 5. File Permissions and Ownership
+- `chmod`: Change permissions (e.g. `chmod 755 file`)
+- `chown`: Change file owner (e.g. `chown user:group file`)
+- `umask`: Default permission mask
+
+### Permission Types:
+- Read (r), Write (w), Execute (x)
+- Numeric: 7 = rwx, 6 = rw-, 5 = r-x, etc.
+
+## 6. User and Group Management
+| Command | Description |
+|---------|-------------|
+| `useradd` | Add a new user |
+| `passwd`  | Set user password |
+| `groupadd`| Create a new group |
+| `usermod` | Modify user account |
+
+## 7. Viewing File Content
+| Command | Description |
+|---------|-------------|
+| `cat`   | Display file content |
+| `less`  | View file page-by-page |
+| `more`  | View file page-by-page (older version) |
+| `head`  | View top N lines |
+| `tail`  | View last N lines |
+| `grep`  | Search for patterns in files |
+
+## 8. File Editing using `vim` or `nano`
+- `vim filename`: Opens file in Vim
+  - Press `i` to insert, `Esc` to exit insert mode
+  - `:w` to save, `:q` to quit
+- `nano filename`: Simpler terminal editor
+  - Ctrl+O to write, Ctrl+X to exit
+
+## 9. Process Management
+| Command | Description |
+|---------|-------------|
+| `ps`    | Show running processes |
+| `top`   | Real-time system monitor |
+| `kill`  | Kill a process by PID |
+| `nice`  | Start process with priority |
+| `htop`  | Interactive process viewer (install separately) |
+
+## 10. Package Management
+
+### Debian-based (Ubuntu/Debian)
+| Command     | Description |
+|-------------|-------------|
+| `apt update`| Refresh package list |
+| `apt upgrade`| Upgrade installed packages |
+| `apt install`| Install package |
+| `dpkg -i`   | Install `.deb` file |
+
+### RedHat-based (CentOS/Fedora/RHEL)
+| Command     | Description |
+|-------------|-------------|
+| `yum install`| Install package |
+| `dnf install`| Modern alternative to `yum` |
+| `rpm -i`     | Install `.rpm` package |
+
+---
+
+> 📌 Tip: Practice each command in a Linux terminal to reinforce your learning.
