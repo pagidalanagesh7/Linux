@@ -38,7 +38,7 @@ It powers a wide range of systems: from smartphones and servers to supercomputer
 | **Today** | Linux is maintained by a global community and supported by organizations like the **Linux Foundation**. |
 
 
-![History of Linux](images/linux-visualselection.png)
+![History of Linux](../images/linux-visualselection.png)
 
 ---
 
